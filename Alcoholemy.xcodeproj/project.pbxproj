@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		090D7DBE1B5FEAC1000406BC /* TipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090D7DBD1B5FEAC1000406BC /* TipViewController.swift */; };
+		0944C9201B5FEEE0005DCEE7 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0944C91F1B5FEEE0005DCEE7 /* RegisterViewController.swift */; };
 		429C87CF1B5D7C9500F747D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429C87CE1B5D7C9500F747D9 /* AppDelegate.swift */; };
 		429C87D11B5D7C9500F747D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429C87D01B5D7C9500F747D9 /* ViewController.swift */; };
 		429C87D41B5D7C9500F747D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 429C87D21B5D7C9500F747D9 /* Main.storyboard */; };
@@ -26,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		090D7DBD1B5FEAC1000406BC /* TipViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipViewController.swift; sourceTree = "<group>"; };
+		0944C91F1B5FEEE0005DCEE7 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		429C87C91B5D7C9500F747D9 /* Alcoholemy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alcoholemy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		429C87CD1B5D7C9500F747D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		429C87CE1B5D7C9500F747D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +84,8 @@
 				429C87CE1B5D7C9500F747D9 /* AppDelegate.swift */,
 				429C87D01B5D7C9500F747D9 /* ViewController.swift */,
 				429C87D21B5D7C9500F747D9 /* Main.storyboard */,
+				090D7DBD1B5FEAC1000406BC /* TipViewController.swift */,
+				0944C91F1B5FEEE0005DCEE7 /* RegisterViewController.swift */,
 				429C87D51B5D7C9500F747D9 /* Images.xcassets */,
 				429C87D71B5D7C9500F747D9 /* LaunchScreen.xib */,
 				429C87CC1B5D7C9500F747D9 /* Supporting Files */,
@@ -213,7 +219,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				429C87D11B5D7C9500F747D9 /* ViewController.swift in Sources */,
+				090D7DBE1B5FEAC1000406BC /* TipViewController.swift in Sources */,
 				429C87CF1B5D7C9500F747D9 /* AppDelegate.swift in Sources */,
+				0944C9201B5FEEE0005DCEE7 /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +419,7 @@
 				429C87EA1B5D7C9500F747D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		429C87EB1B5D7C9500F747D9 /* Build configuration list for PBXNativeTarget "AlcoholemyTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +428,7 @@
 				429C87ED1B5D7C9500F747D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
