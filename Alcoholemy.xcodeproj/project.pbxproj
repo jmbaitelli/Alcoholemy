@@ -56,6 +56,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09BFAAB31B5FD549008365D7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				429C87D01B5D7C9500F747D9 /* ViewController.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		09BFAAB41B5FD550008365D7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		429C87C01B5D7C9500F747D9 = {
 			isa = PBXGroup;
 			children = (
@@ -78,9 +93,10 @@
 			isa = PBXGroup;
 			children = (
 				429C87CE1B5D7C9500F747D9 /* AppDelegate.swift */,
-				429C87D01B5D7C9500F747D9 /* ViewController.swift */,
-				429C87D21B5D7C9500F747D9 /* Main.storyboard */,
+				09BFAAB41B5FD550008365D7 /* Models */,
+				09BFAAB31B5FD549008365D7 /* Views */,
 				429C87D51B5D7C9500F747D9 /* Images.xcassets */,
+				429C87D21B5D7C9500F747D9 /* Main.storyboard */,
 				429C87D71B5D7C9500F747D9 /* LaunchScreen.xib */,
 				429C87CC1B5D7C9500F747D9 /* Supporting Files */,
 			);
@@ -411,6 +427,7 @@
 				429C87EA1B5D7C9500F747D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		429C87EB1B5D7C9500F747D9 /* Build configuration list for PBXNativeTarget "AlcoholemyTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +436,7 @@
 				429C87ED1B5D7C9500F747D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
