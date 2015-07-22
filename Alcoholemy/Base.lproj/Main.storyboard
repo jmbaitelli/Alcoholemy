@@ -2,19 +2,52 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="G6k-se-0pr">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Alcoholemy" customModuleProvider="target" sceneMemberID="viewController">
-                    <button key="view" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wWv-3x-e54">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WyF-jD-oIh"/>
+                        <viewControllerLayoutGuide type="bottom" id="iFh-If-91y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lFh-Hd-DIC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <state key="normal" title="Button">
-                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                        </state>
-                    </button>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GtB-ec-jEs">
+                                <rect key="frame" x="324" y="280" width="65" height="30"/>
+                                <state key="normal" title="Registros">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="387" y="347" width="65" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="Imf-10-uqh" kind="show" id="jp8-jg-Zu9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iFh-If-91y" firstAttribute="top" secondItem="GtB-ec-jEs" secondAttribute="bottom" constant="36" id="Axg-fh-dYs"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GtB-ec-jEs" secondAttribute="trailing" constant="9" id="xTR-8X-Y1W"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="xTR-8X-Y1W"/>
+                                <exclude reference="Axg-fh-dYs"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="xTR-8X-Y1W"/>
+                                <include reference="Axg-fh-dYs"/>
+                            </mask>
+                        </variation>
+                    </view>
                     <navigationItem key="navigationItem" id="b8K-9f-Eee">
                         <barButtonItem key="rightBarButtonItem" title="Dicas" id="UEJ-3y-8ae">
                             <connections>
@@ -25,12 +58,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1057" y="337"/>
+            <point key="canvasLocation" x="1057" y="319"/>
         </scene>
-        <!--View Controller-->
+        <!--Register View Controller-->
         <scene sceneID="dGu-kl-KKE">
             <objects>
-                <viewController id="Imf-10-uqh" sceneMemberID="viewController">
+                <viewController id="Imf-10-uqh" customClass="RegisterViewController" customModule="Alcoholemy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4eT-ZU-x9K"/>
                         <viewControllerLayoutGuide type="bottom" id="pxc-3a-HIw"/>
@@ -43,7 +76,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rh5-wo-chC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1057" y="1078"/>
+            <point key="canvasLocation" x="1057" y="1097"/>
         </scene>
         <!--Tip View Controller-->
         <scene sceneID="TJc-xV-DVc">
@@ -61,7 +94,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="72g-b2-zE4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1817" y="337"/>
+            <point key="canvasLocation" x="1817" y="319"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="tHT-F8-nAg">
