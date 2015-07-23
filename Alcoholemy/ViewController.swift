@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     
     var time = 10
     var timer = NSTimer()
+    let randomNumber = Int(arc4random_uniform(5))
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -28,10 +29,13 @@ class ViewController: UIViewController {
         var notification = UILocalNotification()
         
         notification.alertAction = "go back to app"
-        notification.alertBody = "You're drunk. Go home!!" /* This should be changing */
+//        notification.alertBody = "You're drunk. Go home!!" /* This should be changing */
+        notification.alertBody = NotificationModel.sharedinstance.advices[randomNumber]
         notification.fireDate = NSDate (timeIntervalSinceNow: 0)
         UIApplication.sharedApplication().scheduleLocalNotification(notification)
-        timer.invalidate()
+//        timer.invalidate()
+        
+        time = 10
         }
     }
 

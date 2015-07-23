@@ -15,6 +15,7 @@
 		429C87D61B5D7C9500F747D9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 429C87D51B5D7C9500F747D9 /* Images.xcassets */; };
 		429C87D91B5D7C9500F747D9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 429C87D71B5D7C9500F747D9 /* LaunchScreen.xib */; };
 		429C87E51B5D7C9500F747D9 /* AlcoholemyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429C87E41B5D7C9500F747D9 /* AlcoholemyTests.swift */; };
+		AD81AC121B607AC300573C12 /* NotificationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD81AC111B607AC300573C12 /* NotificationsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		429C87DE1B5D7C9500F747D9 /* AlcoholemyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlcoholemyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		429C87E31B5D7C9500F747D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		429C87E41B5D7C9500F747D9 /* AlcoholemyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlcoholemyTests.swift; sourceTree = "<group>"; };
+		AD81AC111B607AC300573C12 /* NotificationsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationsModel.swift; path = ../NotificationsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		429C87CB1B5D7C9500F747D9 /* Alcoholemy */ = {
 			isa = PBXGroup;
 			children = (
+				AD81AC111B607AC300573C12 /* NotificationsModel.swift */,
 				429C87CE1B5D7C9500F747D9 /* AppDelegate.swift */,
 				429C87D01B5D7C9500F747D9 /* ViewController.swift */,
 				429C87D21B5D7C9500F747D9 /* Main.storyboard */,
@@ -220,6 +223,7 @@
 			files = (
 				429C87D11B5D7C9500F747D9 /* ViewController.swift in Sources */,
 				090D7DBE1B5FEAC1000406BC /* TipViewController.swift in Sources */,
+				AD81AC121B607AC300573C12 /* NotificationsModel.swift in Sources */,
 				429C87CF1B5D7C9500F747D9 /* AppDelegate.swift in Sources */,
 				0944C9201B5FEEE0005DCEE7 /* RegisterViewController.swift in Sources */,
 			);
