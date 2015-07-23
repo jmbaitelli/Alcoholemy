@@ -18,6 +18,11 @@
 		AD81AC121B607AC300573C12 /* NotificationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD81AC111B607AC300573C12 /* NotificationsModel.swift */; };
 		ADCC53351B61310A00E541DA /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCC53341B61310A00E541DA /* Timer.swift */; };
 		ADCC53371B614C6600E541DA /* DataView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADCC53361B614C6600E541DA /* DataView.xib */; };
+		ADCC533D1B61623300E541DA /* JSonConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCC53381B61623300E541DA /* JSonConverter.swift */; };
+		ADCC533E1B61623300E541DA /* festa.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADCC53391B61623300E541DA /* festa.plist */; };
+		ADCC533F1B61623300E541DA /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCC533A1B61623300E541DA /* EventViewController.swift */; };
+		ADCC53401B61623300E541DA /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCC533B1B61623300E541DA /* Events.swift */; };
+		ADCC53411B61623300E541DA /* EventDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCC533C1B61623300E541DA /* EventDAO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +51,11 @@
 		AD81AC111B607AC300573C12 /* NotificationsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationsModel.swift; path = ../NotificationsModel.swift; sourceTree = "<group>"; };
 		ADCC53341B61310A00E541DA /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Timer.swift; path = ../Timer.swift; sourceTree = "<group>"; };
 		ADCC53361B614C6600E541DA /* DataView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DataView.xib; path = ../DataView.xib; sourceTree = "<group>"; };
+		ADCC53381B61623300E541DA /* JSonConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSonConverter.swift; sourceTree = "<group>"; };
+		ADCC53391B61623300E541DA /* festa.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = festa.plist; sourceTree = "<group>"; };
+		ADCC533A1B61623300E541DA /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
+		ADCC533B1B61623300E541DA /* Events.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
+		ADCC533C1B61623300E541DA /* EventDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDAO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,16 +97,10 @@
 		429C87CB1B5D7C9500F747D9 /* Alcoholemy */ = {
 			isa = PBXGroup;
 			children = (
-				ADCC53341B61310A00E541DA /* Timer.swift */,
-				AD81AC111B607AC300573C12 /* NotificationsModel.swift */,
-				429C87CE1B5D7C9500F747D9 /* AppDelegate.swift */,
-				429C87D01B5D7C9500F747D9 /* ViewController.swift */,
-				429C87D21B5D7C9500F747D9 /* Main.storyboard */,
-				090D7DBD1B5FEAC1000406BC /* TipViewController.swift */,
-				0944C91F1B5FEEE0005DCEE7 /* RegisterViewController.swift */,
-				ADCC53361B614C6600E541DA /* DataView.xib */,
+				ADCC53431B61626B00E541DA /* model */,
+				ADCC53441B61628200E541DA /* Controller */,
+				ADCC53451B61629C00E541DA /* View */,
 				429C87D51B5D7C9500F747D9 /* Images.xcassets */,
-				429C87D71B5D7C9500F747D9 /* LaunchScreen.xib */,
 				429C87CC1B5D7C9500F747D9 /* Supporting Files */,
 			);
 			path = Alcoholemy;
@@ -125,6 +129,41 @@
 				429C87E31B5D7C9500F747D9 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ADCC53431B61626B00E541DA /* model */ = {
+			isa = PBXGroup;
+			children = (
+				ADCC53381B61623300E541DA /* JSonConverter.swift */,
+				ADCC53391B61623300E541DA /* festa.plist */,
+				ADCC533A1B61623300E541DA /* EventViewController.swift */,
+				ADCC533B1B61623300E541DA /* Events.swift */,
+				ADCC533C1B61623300E541DA /* EventDAO.swift */,
+				AD81AC111B607AC300573C12 /* NotificationsModel.swift */,
+				429C87CE1B5D7C9500F747D9 /* AppDelegate.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		ADCC53441B61628200E541DA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ADCC53341B61310A00E541DA /* Timer.swift */,
+				429C87D01B5D7C9500F747D9 /* ViewController.swift */,
+				090D7DBD1B5FEAC1000406BC /* TipViewController.swift */,
+				0944C91F1B5FEEE0005DCEE7 /* RegisterViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		ADCC53451B61629C00E541DA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				429C87D21B5D7C9500F747D9 /* Main.storyboard */,
+				ADCC53361B614C6600E541DA /* DataView.xib */,
+				429C87D71B5D7C9500F747D9 /* LaunchScreen.xib */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,6 +250,7 @@
 				429C87D41B5D7C9500F747D9 /* Main.storyboard in Resources */,
 				429C87D91B5D7C9500F747D9 /* LaunchScreen.xib in Resources */,
 				429C87D61B5D7C9500F747D9 /* Images.xcassets in Resources */,
+				ADCC533E1B61623300E541DA /* festa.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,9 +269,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				429C87D11B5D7C9500F747D9 /* ViewController.swift in Sources */,
+				ADCC53411B61623300E541DA /* EventDAO.swift in Sources */,
 				090D7DBE1B5FEAC1000406BC /* TipViewController.swift in Sources */,
 				AD81AC121B607AC300573C12 /* NotificationsModel.swift in Sources */,
+				ADCC533D1B61623300E541DA /* JSonConverter.swift in Sources */,
 				ADCC53351B61310A00E541DA /* Timer.swift in Sources */,
+				ADCC533F1B61623300E541DA /* EventViewController.swift in Sources */,
+				ADCC53401B61623300E541DA /* Events.swift in Sources */,
 				429C87CF1B5D7C9500F747D9 /* AppDelegate.swift in Sources */,
 				0944C9201B5FEEE0005DCEE7 /* RegisterViewController.swift in Sources */,
 			);
