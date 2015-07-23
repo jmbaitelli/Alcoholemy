@@ -9,10 +9,30 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    var time = 10
+    var timer = NSTimer()
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: ("Notification"), userInfo: nil, repeats: true)
+        
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    func Notification(){
+        time -= 1
+        
+        if(time == 0) {
+        
+        var notification = UILocalNotification()
+        
+        notification.alertAction = "go back to app"
+        notification.alertBody = "You're drunk. Go home!!" /* This should be changing */
+        notification.fireDate = NSDate (timeIntervalSinceNow: 0)
+        UIApplication.sharedApplication().scheduleLocalNotification(notification)
+        timer.invalidate()
+        }
     }
 
     override func didReceiveMemoryWarning() {
