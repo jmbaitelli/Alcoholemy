@@ -17,12 +17,14 @@
 		429C87E51B5D7C9500F747D9 /* AlcoholemyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429C87E41B5D7C9500F747D9 /* AlcoholemyTests.swift */; };
 		AD81AC121B607AC300573C12 /* NotificationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD81AC111B607AC300573C12 /* NotificationsModel.swift */; };
 		ADCC53351B61310A00E541DA /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCC53341B61310A00E541DA /* Timer.swift */; };
-		ADCC53371B614C6600E541DA /* DataView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADCC53361B614C6600E541DA /* DataView.xib */; };
 		ADCC533D1B61623300E541DA /* JSonConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCC53381B61623300E541DA /* JSonConverter.swift */; };
 		ADCC533E1B61623300E541DA /* festa.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADCC53391B61623300E541DA /* festa.plist */; };
 		ADCC533F1B61623300E541DA /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCC533A1B61623300E541DA /* EventViewController.swift */; };
 		ADCC53401B61623300E541DA /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCC533B1B61623300E541DA /* Events.swift */; };
 		ADCC53411B61623300E541DA /* EventDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCC533C1B61623300E541DA /* EventDAO.swift */; };
+		ADCC53471B616C9F00E541DA /* TipView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADCC53461B616C9F00E541DA /* TipView.xib */; };
+		ADCC53491B616CF900E541DA /* RegisterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADCC53481B616CF900E541DA /* RegisterView.xib */; };
+		ADCC534B1B616D1C00E541DA /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADCC534A1B616D1C00E541DA /* MainView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,12 +52,14 @@
 		429C87E41B5D7C9500F747D9 /* AlcoholemyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlcoholemyTests.swift; sourceTree = "<group>"; };
 		AD81AC111B607AC300573C12 /* NotificationsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationsModel.swift; path = ../NotificationsModel.swift; sourceTree = "<group>"; };
 		ADCC53341B61310A00E541DA /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Timer.swift; path = ../Timer.swift; sourceTree = "<group>"; };
-		ADCC53361B614C6600E541DA /* DataView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DataView.xib; path = ../DataView.xib; sourceTree = "<group>"; };
 		ADCC53381B61623300E541DA /* JSonConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSonConverter.swift; sourceTree = "<group>"; };
 		ADCC53391B61623300E541DA /* festa.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = festa.plist; sourceTree = "<group>"; };
 		ADCC533A1B61623300E541DA /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
 		ADCC533B1B61623300E541DA /* Events.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
 		ADCC533C1B61623300E541DA /* EventDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDAO.swift; sourceTree = "<group>"; };
+		ADCC53461B616C9F00E541DA /* TipView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TipView.xib; sourceTree = "<group>"; };
+		ADCC53481B616CF900E541DA /* RegisterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterView.xib; sourceTree = "<group>"; };
+		ADCC534A1B616D1C00E541DA /* MainView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,8 +164,10 @@
 			isa = PBXGroup;
 			children = (
 				429C87D21B5D7C9500F747D9 /* Main.storyboard */,
-				ADCC53361B614C6600E541DA /* DataView.xib */,
+				ADCC53481B616CF900E541DA /* RegisterView.xib */,
 				429C87D71B5D7C9500F747D9 /* LaunchScreen.xib */,
+				ADCC534A1B616D1C00E541DA /* MainView.xib */,
+				ADCC53461B616C9F00E541DA /* TipView.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -246,11 +252,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADCC53371B614C6600E541DA /* DataView.xib in Resources */,
+				ADCC53471B616C9F00E541DA /* TipView.xib in Resources */,
 				429C87D41B5D7C9500F747D9 /* Main.storyboard in Resources */,
 				429C87D91B5D7C9500F747D9 /* LaunchScreen.xib in Resources */,
 				429C87D61B5D7C9500F747D9 /* Images.xcassets in Resources */,
 				ADCC533E1B61623300E541DA /* festa.plist in Resources */,
+				ADCC534B1B616D1C00E541DA /* MainView.xib in Resources */,
+				ADCC53491B616CF900E541DA /* RegisterView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

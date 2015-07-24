@@ -17,6 +17,9 @@ class ViewController: UIViewController {
        
         timer.startTimer()
 
+//        var vc = (nibName: "DataView.xib", bundle: nil)
+        
+        self.presentViewController(vc, animated: false, completion: nil)
         // Do any additional setup after loading the view, typically from a nib.
     
        }
